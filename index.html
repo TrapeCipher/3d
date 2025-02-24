@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-image: linear-gradient(180deg, rgb(121, 0, 190), rgb(32, 32, 32));
+        }
+        
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            z-index: 1;
+        }
+
+        .header { 
+            z-index: 2;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Jost", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-size: 60px;
+            font-style: normal;
+            color: white;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>GOING TO THE MOON</h1>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.69/build/spline-viewer.js" async></script>
+    <spline-viewer url="https://prod.spline.design/4p4tKzPG36HTv8At/scene.splinecode">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAATCAYAAADxlA/3AAAJ+ElEQVR4AQCBAH7/AKlEowupRKMHqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEoxCpRKMfqUSjKqlEozCpRKMwqUSjK6lEoyGpRKMTqUSjBKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjCKlEoxCpRKMUAIEAfv8AqUSjDKlEowepRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMDqUSjE6lEoyKpRKMtqUSjM6lEozOpRKMuqUSjI6lEoxapRKMGqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMHqUSjD6lEoxMAgQB+/wCpRKMNqUSjCalEowGpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowmpRKMZqUSjKKlEozOpRKM5qUSjOalEozSpRKMpqUSjGqlEowqpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowWpRKMNqUSjEQCBAH7/AKlEow6pRKMKqUSjA6lEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMBqUSjEalEoyKpRKMxqUSjPKlEo0KpRKNCqUSjPKlEozCpRKMhqUSjEKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjBKlEowupRKMPAIEAfv8AqUSjEKlEow2pRKMGqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowqpRKMbqUSjLKlEozypRKNHqUSjTalEo02pRKNGqUSjOqlEoyqpRKMYqUSjB6lEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMDqUSjCqlEow4AgQB+/wCpRKMTqUSjD6lEowmpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMEqUSjFKlEoyapRKM4qUSjSKlEo1OpRKNZqUSjWKlEo1GpRKNFqUSjNKlEoyGpRKMPqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowOpRKMKqUSjDQCBAH7/AKlEoxWpRKMRqUSjC6lEowSpRKMAqUSjAKlEowCpRKMAqUSjAKlEow2pRKMeqUSjMKlEo0OpRKNTqUSjX6lEo2WpRKNkqUSjXKlEo0+pRKM+qUSjKqlEoxepRKMFqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjBKlEowqpRKMOAIEAfv8AqUSjFqlEoxOpRKMNqUSjBqlEowCpRKMAqUSjAKlEowCpRKMHqUSjFKlEoyapRKM5qUSjTKlEo1ypRKNoqUSjbqlEo22pRKNlqUSjWKlEo0apRKMxqUSjHalEowupRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMFqUSjC6lEow8AgQB+/wCpRKMWqUSjE6lEow6pRKMHqUSjAalEowCpRKMAqUSjAalEowqpRKMZqUSjK6lEoz6pRKNSqUSjYqlEo26pRKN0qUSjc6lEo2upRKNdqUSjS6lEozapRKMiqUSjD6lEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowapRKMMqUSjEACBAH7/AKlEoxWpRKMSqUSjDKlEowapRKMAqUSjAKlEowCpRKMBqUSjC6lEoxqpRKMsqUSjQKlEo1OpRKNkqUSjcKlEo3apRKN1qUSjbalEo1+pRKNMqUSjN6lEoyOpRKMQqUSjAalEowCpRKMAqUSjAKlEowCpRKMAqUSjB6lEow2pRKMQAIEAfv8AqUSjEqlEow+pRKMKqUSjA6lEowCpRKMAqUSjAKlEowCpRKMJqUSjF6lEoyqpRKM9qUSjUalEo2KpRKNuqUSjdKlEo3OpRKNqqUSjXKlEo0qpRKM1qUSjIKlEow6pRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMGqUSjDKlEoxAAgQB+/wCpRKMPqUSjDKlEowapRKMAqUSjAKlEowCpRKMAqUSjAKlEowSpRKMSqUSjJKlEozipRKNLqUSjXKlEo2ipRKNtqUSjbKlEo2SpRKNWqUSjRKlEozCpRKMbqUSjCalEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowWpRKMLqUSjDwCBAH7/AKlEowypRKMJqUSjA6lEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowypRKMdqUSjMKlEo0OpRKNTqUSjX6lEo2WpRKNjqUSjW6lEo06pRKM8qUSjKKlEoxSpRKMDqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjBKlEowqpRKMOAIEAfv8AqUSjCqlEowepRKMBqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjBqlEoxapRKMoqUSjO6lEo0qpRKNVqUSjW6lEo1qpRKNSqUSjRKlEozOpRKMgqUSjDalEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMDqUSjCqlEow0AgQB+/wCpRKMLqUSjB6lEowGpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjEKlEoyGpRKMzqUSjQqlEo0ypRKNRqUSjUKlEo0ipRKM7qUSjKqlEoxipRKMFqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowKpRKMKqUSjDgCBAH7/AKlEow2pRKMJqUSjA6lEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMLqUSjG6lEoyypRKM7qUSjRalEo0qpRKNIqUSjQKlEozSpRKMjqUSjEalEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjA6lEowupRKMPAIEAfv8AqUSjEKlEowypRKMFqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowipRKMYqUSjKKlEozWpRKM/qUSjRKlEo0KpRKM7qUSjLqlEox6pRKMMqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMFqUSjDalEoxEAgQB+/wCpRKMTqUSjD6lEowipRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjBqlEoxWpRKMlqUSjMqlEozypRKNAqUSjPqlEozepRKMqqUSjGqlEowmpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowapRKMPqUSjEwGBAH7/AKlEoxSpRKMQqUSjCalEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMFqUSjFKlEoyOpRKMxqUSjOqlEoz6pRKM8qUSjNalEoyipRKMZqUSjCKlEowCpRKMAqUSjAKlEowCpRKMAqUSjAKlEowCpRKMAqUSjB6lEoxCpRKMUinDsQCweGvgAAAAASUVORK5CYII=" 
+        alt="Spline preview" 
+        style="width: 100%; height: 100%;"/>
+    </spline-viewer>
+</body>
+</html>
